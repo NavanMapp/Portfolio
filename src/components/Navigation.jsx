@@ -3,7 +3,7 @@
 export default function Navigation() {
 
     return (
-        <div className='navbar'>
+        <div className='App-header'>
             <ul>
                 Contact
                 <li>

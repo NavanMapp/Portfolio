@@ -1,32 +1,53 @@
 import React from "react";
+import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
-    return (
-        <div>
-            <h1>Work Experience</h1>
-            <section className='experienceCard'>
-                <h3>Sandtech | Software Engineer Intern</h3>
-                <h4>Johannesburg & Remote, Gauteng</h4>
-                <h4>March 2024 - May 2024</h4>
-                <p>
-                    Front-end development, specializing in UI/UX design and development
+    
+    // Card Skeleton
+    // image: '',
+    // company: '',
+    // location: '',
+    // duration: '',
+    // description: ''
+
+    const cardData = [
+        {
+        image:'',
+        company: 'Sandtech | Software Engineer Intern',
+        location: 'Johannesburg & Remote, Gauteng',
+        duration: 'March 2024 - May 2024',
+        description: `Front-end development, specializing in UI/UX design and development
                     for C# & ASP.NET Core API, MAUI applications.
                     Proficient in Azure DevOps tools, encompassing version control, CI/CD
                     pipelines, and release management.
-                    Troubleshooting, debugging, maintaining and improving code base.
-                </p>
-            </section>
-            <section className='experienceCard'>
-                <h3>Curro Holdings | IT Systems Administrator</h3>
-                <h4>Edenvale, Gauteng</h4>
-                <h4>August 2023 - Current</h4>
-                <p>
-                    Administrative support of Microsoft Azure, Active Directory,
+                    Troubleshooting, debugging, maintaining and improving code base.`
+    },
+    {
+        image: '',
+        company: 'Curro Holdings | IT Systems Administrator',
+        location: 'Edenvale, Gauteng',
+        duration: 'August 2023 - Current',
+        description: `Administrative support of Microsoft Azure, Active Directory,
                     Organizational Unit.
                     VMware Workstation - Cloud computing leveraging remote Server, PC
-                    access, optimizing data and management.
-                </p>
-            </section>
+                    access, optimizing data and management.`
+    }
+
+];
+
+    return (
+        <div className='App-header' style={{display:'flex', flexWrap:'wrap' }}>
+            <h1>Work Experience</h1>
+            {cardData.map((card, index) => (
+            <ExperienceCard 
+                key={index}
+                company={card.company}
+                location={card.location}
+                duration={card.duration}
+                description={card.description}
+                image={card.image}
+            />
+            ))}
         </div>
     )
 }

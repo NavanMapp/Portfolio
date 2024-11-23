@@ -2,7 +2,7 @@ import React from "react";
 
 function Projects({title, description, image}) {
     return (
-        <div>
+        <div className='App-header'>
             <h1>Projects</h1>
             <section className='experienceCard'>
                 { image && <img src={image} alt={title} className='card-image' /> }
@@ -11,6 +11,12 @@ function Projects({title, description, image}) {
                     Mapp Supreme Website
                 </h2>
                 <h3>Ticket logging system for a local IT company.</h3>
+                <a href="https://mappsupreme-50938.web.app/" 
+                className="App-link" target="_blank"
+                rel="noopener noreferrer"
+                >
+                    Project Link
+                </a>
                 <ul>
                     <a>React</a>
                     <a>Javascript</a>

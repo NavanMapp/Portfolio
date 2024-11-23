@@ -1,6 +1,6 @@
 function About() {
     return (
-        <div>
+        <div className='App-header'>
             <img src='' alt='About' className='aboutIcon' />
             <p>
                 As Dynamic Full Stack Developer, I bring a wealth of experience 

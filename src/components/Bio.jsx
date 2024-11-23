@@ -3,9 +3,9 @@ import profile from "../Images/profilePic.jpg"
 
 function Bio() {
   return (
-    <div> Bio
+    <div className="App-header"> Bio
       <img
-        className=""
+        className="bioImage"
         src={profile}
         alt="Profile Pic"
       />
