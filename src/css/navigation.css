@@ -1,0 +1,40 @@
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.right-nav{
+    flex: 1;
+    background-color: #282c34;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0 , 0.1);
+    color: white;
+}
+
+  .right-nav, nav, ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .right-nav, nav, ul, li, a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  .right-nav a:hover {
+    color: #007BFF;
+  }
