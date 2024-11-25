@@ -2,11 +2,11 @@ import React from "react";
 
 function Projects({title, description, image}) {
     return (
-        <div className='App-header'>
+        <div className="right-content">
             <h1>Projects</h1>
-            <section className='experienceCard'>
-                { image && <img src={image} alt={title} className='card-image' /> }
-                <h2 className='card-title' >
+            <section className="experienceCard">
+                { image && <img src={image} alt={title} className="card-image" /> }
+                <h2 className="card-title" >
                     {title  }
                     Mapp Supreme Website
                 </h2>
@@ -24,9 +24,9 @@ function Projects({title, description, image}) {
                     <a>Firebase</a>
                 </ul>
             </section>
-            <section className='experienceCard'>
+            <section className="experienceCard">
                 <h2>
-                    <img className='' />
+                    <img className="" />
                     Price Compare API
                 </h2>
                 <h3>Application that compares store products to others.</h3>

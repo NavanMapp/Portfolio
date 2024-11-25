@@ -3,38 +3,47 @@
 export default function Navigation() {
 
     return (
-        <div className='App-header'>
-            <ul>
-                Contact
-                <li>
-                    <img src='' alt='Email' className='emailIcon' />
-                    navanmapp@gmail.com
-                </li>
-                <li>
-                    <img src='' alt='Location' className='locationIcon' />
-                    Johannesburg, South Africa
-                </li>
-            </ul>
-            <div className='navElements'>
-                <ul>
-                    <a>
-                        <img src='' alt='Projects' className='projectsIcon' />
-                        Projects
-                    </a>
-                    <a>
-                        <img src='' alt='Experience' className='experienceIcon' />
-                        Work Experience
-                    </a>
-                    <a>
-                        <img src='' alt='Education' className='educationIcon' />
-                        Education
-                    </a>
-                    <a>
-                        <img src='' alt='About' className='aboutIcon' />
-                        About
-                    </a>
+        <div className="left-nav">
+            <nav>
+                <ul className="contact-info">
+                    <li>
+                        <img src="" alt="Email Icon" className="icon email-icon" />
+                        <span>navanmapp@gmail.com</span>
+                    </li>
+                    <li>
+                        <img src="" alt="Location Icon" className="icon location-icon" />
+                        <span>Johannesburg, South Africa</span>
+                    </li>
                 </ul>
-            </div>
+                <div className="navigation-links">
+                    <ul>
+                        <li>
+                            <a href="#projects">
+                                <img src="" alt="Projects Icon" className="icon projects-icon" />
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience">
+                                <img src="" alt="Experience Icon" className="icon experience-icon" />
+                                <span>Work Experience</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#education">
+                                <img src="" alt="Education Icon" className="icon education-icon" />
+                                <span>Education</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <img src="" alt="About Icon" className="icon about-icon" />
+                                <span>About</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     )
 }

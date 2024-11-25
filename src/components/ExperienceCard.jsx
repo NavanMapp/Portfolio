@@ -2,7 +2,7 @@ import React from "react";
 
 function ExperienceCard({ image, company, location, duration, description }) {
   return (
-    <div className="App-header">    <div className='card'>
+    <div className="right-content">    <div className='card'>
       {image && <img src={image} alt={company} className='cardImage' />}
       <div className='cardContent'>
         <h2 className='cardTitle'>{company}</h2>

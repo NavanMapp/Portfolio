@@ -1,5 +1,8 @@
+/********************* App  **************/
 .App {
-  text-align: center;
+  display: flex;
+  height: 50vh;
+  width: 100%;
 }
 
 .App-logo {
@@ -13,15 +16,20 @@
   }
 }
 
+body {
+  margin: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  /* align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; */
 }
 
 .App-link {
@@ -32,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -42,4 +51,87 @@
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  }
+}
+
+/**************************** Navigation ***********************/
+
+
+.left-nav {
+  width: 25%;
+  display: flex;
+  background-color: #282c34;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-nav, nav, ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-nav, nav, ul, li, a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.left-nav a:hover {
+  color: #007BFF;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.navigation-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-links li {
+  margin-bottom: 15px;
+}
+
+.navigation-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navigation-links .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.navigation-links a:hover {
+  color: #007BFF;
+}
+
+/************* Right Content *************/
+.right-content {
+  flex: 1;
+  padding: 20px;
+  /* overflow-y: auto; */
+  flex-direction: column;
+}
