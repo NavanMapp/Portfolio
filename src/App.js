@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Experience from './components/Experience';
 import Bio from './components/Bio';
 import Projects from './components/Projects';
+import Main from './Pages/Main';
 
 function App() {
   return (
@@ -23,10 +24,7 @@ function App() {
         </a>
       </header> */}
       <Navigation />
-      <Bio />
-      <Projects />
-      <Experience />
-      
+      <Main />    
     </div>
   );
 }
