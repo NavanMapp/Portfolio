@@ -2,7 +2,7 @@ import React from "react";
 
 function Projects({title, description, image}) {
     return (
-        <div className="right-content">
+        <div className="">
             <h1>Projects</h1>
             <section className="experienceCard">
                 { image && <img src={image} alt={title} className="card-image" /> }

@@ -1,138 +1,88 @@
 /********************* App  **************/
 .App {
-  display: flex;
-  height: 50vh;
-  width: 100%;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent horizontal overflow */
   }
-}
-
-body {
-  margin: flex;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.App-header {
-  background-color: #282c34;
-  height: 50vh;
-  display: flex;
-  /* flex-direction: column; */
-  /* align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white; */
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .App-link {
+    color: #61dafb;
   }
 
-  to {
-    transform: rotate(360deg);
+  .bioImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
   }
-}
-
-.bioImage {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/**************************** Navigation ***********************/
-
-
-.left-nav {
-  width: 20%;
-  display: flex;
-  background-color: #282c34;
-  padding: 20px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  color: white;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.left-nav, nav, ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.left-nav, nav, ul, li, a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
-
-.left-nav a:hover {
-  color: #007BFF;
-}
-
-.contact-info {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 20px;
-}
-
-.contact-info li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.contact-info .icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-.navigation-links ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navigation-links li {
-  margin-bottom: 15px;
-}
-
-.navigation-links a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  transition: color 0.3s ease;
-}
-
-.navigation-links .icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.navigation-links a:hover {
-  color: #007BFF;
-}
-
-/************* Right Content *************/
-.right-content {
-  display: flex;
-  flex: 1;
-  padding: 20px;
-  /* overflow-y: auto; */
-  flex-direction: column;
-}
+  
+  /**************************** Navigation ***********************/
+  
+  .left-nav {
+    width: 20%; /* Fixed width for navigation */
+    background-color: #282c34; /* Dark background */
+    color: white; /* Text color */
+    height: 100vh; /* Fill entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align links at the top */
+    padding: 20px; /* Add spacing inside */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  }
+  
+  .left-nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left-nav li {
+    margin-bottom: 15px; /* Space between items */
+  }
+  
+  .left-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .left-nav a:hover {
+    color: #007BFF; /* Hover color */
+  }
+  
+  .contact-info {
+    margin-top: auto; /* Push contact info to the bottom */
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /************* Right Content *************/
+  .right-content {
+    flex: 1; /* Fill remaining space */
+    padding: 20px; /* Spacing inside the content area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .right-content section {
+    margin-bottom: 40px; /* Space between sections */
+  }
+  

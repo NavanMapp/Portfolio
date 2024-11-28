@@ -1,0 +1,115 @@
+/********************* App  **************/
+.App-link {
+  color: #61dafb;
+}
+
+.App {
+  display: flex;
+  height: auto;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.bioImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/**************************** Navigation ***********************/
+
+
+.left-nav {
+  width: 20%;
+  background-color: #282c34;
+  grid-template-columns: 12em;
+  grid-template-rows: auto 1fr auto auto;
+}
+
+/* .left-nav, nav, ul {
+  list-style-type: none;
+  padding: 2;
+} */
+
+/* .left-nav, nav, ul, li, a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+} */
+
+/* .left-nav a:hover {
+  color: #007BFF;
+} */
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.navigation-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-links li {
+  margin-bottom: 15px;
+}
+
+.navigation-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.navigation-links .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.navigation-links a:hover {
+  color: #007BFF;
+}
+
+/************* Right Content *************/
+.right-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  flex-direction: column;
+}

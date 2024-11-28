@@ -3,7 +3,7 @@ import profile from "../Images/profilePic.jpg"
 
 function Bio() {
   return (
-    <div className="right-content"> Bio
+    <div className=""> Bio
       <img
         className="bioImage"
         src={profile}
