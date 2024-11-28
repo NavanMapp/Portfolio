@@ -3,9 +3,10 @@
 export default function Navigation() {
 
     return (
-        <div className="left-nav">
+        <div className="left-nav"> 
             <nav>
                 <ul className="contact-info">
+                <h1 className="contact">Contact</h1>
                     <li>
                         <img src="" alt="Email Icon" className="icon email-icon" />
                         <span>navanmapp@gmail.com</span>

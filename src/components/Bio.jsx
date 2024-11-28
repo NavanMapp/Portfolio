@@ -1,14 +1,19 @@
 import React from "react";
-import profile from "../Images/profilePic.jpg"  
+import profile from "../Images/profilePic.jpg"
 
 function Bio() {
   return (
-    <div className=""> Bio
-      <img
-        className="bioImage"
-        src={profile}
-        alt="Profile Pic"
-      />
+    <div className="bio">
+      <div className="bioName">Navan Maphalala</div>
+      <div className="bioTitle">IT Administrator & Software Developer</div>
+      <header>
+        <img
+          className="bioImage"
+          src={profile}
+          alt="Profile Pic"
+        />
+      </header>
+
       <p>
         Specialized IT Professional of 8 Years, delivering scalable solutions
         with clear communication and efficient management. Focused on quality

@@ -21,12 +21,15 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .bio {
+  }
   
   /**************************** Navigation ***********************/
   
   .left-nav {
     width: 20%; /* Fixed width for navigation */
-    background-color: #282c34; /* Dark background */
+    background-color: #bfc1c7; /* Dark background */
     color: white; /* Text color */
     height: 100vh; /* Fill entire viewport height */
     display: flex;
@@ -34,6 +37,11 @@
     justify-content: flex-start; /* Align links at the top */
     padding: 20px; /* Add spacing inside */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  }
+
+  .contact {
+    text-align: center;
+    padding: 10px;
   }
   
   .left-nav ul {
@@ -48,7 +56,7 @@
   
   .left-nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     transition: color 0.3s ease;
   }
@@ -59,18 +67,41 @@
   
   .contact-info {
     margin-top: auto; /* Push contact info to the bottom */
+    background-color: rgb(115, 110, 110);
+    color: black;
+    margin: 20px;
+  }
+
+  .contact-info ul {
   }
   
   .contact-info li {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 5px 10px;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    height: 5vh;
   }
   
   .contact-info .icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+  }
+
+  .navigation-links .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .navigation-links a {
+    /* display: flex; */
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
   }
   
   /************* Right Content *************/

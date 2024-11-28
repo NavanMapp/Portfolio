@@ -2,7 +2,7 @@ import React from "react";
 
 const ExperienceCard = ({ image, company, location, duration, description }) => {
     return (
-        <div className="right-content">
+        <div className="">
             <div className="card">
                 {image && <img src={image} alt={company} className="cardImage" />}
                 <div className="cardContent">
