@@ -8,6 +8,7 @@ import { useState } from 'react'
 import About from './components/About'
 
 function App () {
+  
   const [isSidebarOpen, setSidebarOpen] = useState(true)
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen)
@@ -15,7 +16,7 @@ function App () {
 
   return (
     <div className='App'>
-      <div className={`main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+      <div className={`main-content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
         <Navigation isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         <Bio />
         <Projects />
