@@ -41,6 +41,8 @@
     z-index: 1000;
   }
 
+  
+
   .sidebar.open {
     transform: translateX(0);
   }
@@ -51,16 +53,17 @@
 
   .toggle-button {
     position: absolute;
-    top: 800px;
+    top: 400px;
     right: 10px;
     width: 35px;
     height: 35px;
     background: #333;
     color: #fff;
     border: none;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
   }
+
   .sidebar ul {
     list-style-type: none;
     padding: 20px;
@@ -69,31 +72,22 @@
   .sidebar ul li {
     margin: 15px 0;
     cursor: pointer;
+    list-style-type: none;
   }
   .contact {
     text-align: center;
     padding: 10px;
   }
   
-  .left-nav ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .left-nav li {
-    margin-bottom: 15px; /* Space between items */
-  }
-  
-  .left-nav a {
+  .sidebar a {
     text-decoration: none;
     color: black;
     font-size: 18px;
     transition: color 0.3s ease;
   }
   
-  .left-nav a:hover {
-    color: #007BFF; /* Hover color */
+  .sidebar a:hover {
+    color: #ff4800; /* Hover color */
   }
   
   .contact-info {
@@ -102,33 +96,40 @@
     color: black;
     margin: 20px;
   }
-
-  .contact-info ul {
-  }
   
   .contact-info li {
     display: flex;
     align-items: center;
-    padding: 5px 10px;
-    /* margin-bottom: 10px; */
+    padding: 10px 40px;
+    margin-bottom: 10px;
     text-align: center;
     height: 5vh;
   }
   
   .contact-info .icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
+  }
+
+  .navigation-links {
+    justify-content: center;
+    /* justify-items: center; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    margin: auto;
   }
 
   .navigation-links .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    /* margin-right: 0; */
+    padding: 20px;
   }
 
   .navigation-links a {
-    /* display: flex; */
+    display: flex;
     align-items: center;
     text-decoration: none;
     font-size: 25px;
@@ -155,11 +156,33 @@
     /* flex-direction: column; */
   }
 
-  .project-section {
-    /* display: flex; */
-    /* flex-direction: column; */
+  .project-info a  {
+    display: grid;
+    z-index: auto;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px;  
   }
 
-  .experience-section {
-    /* flex-direction: column; */
+  .project-info ul {
+    display: flex;
+    padding: 10px;
+  }
+
+  .project-info .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .stack {
+    padding: 20px;
+    font-weight: bolder;
+  }
+
+  .experience-card {
+    display: grid;
+    flex-direction: column;
+    z-index: auto;
   }
