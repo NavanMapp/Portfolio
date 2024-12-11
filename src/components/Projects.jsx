@@ -1,8 +1,8 @@
 import React from "react";
 
-function Projects({title, description, image}) {
+function Projects({title, description, image, refProp }) {
     return (
-        <div className="">
+        <div className="" ref={refProp} >
             <h1>Projects</h1>
             <section className="experienceCard">
                 { image && <img src={image} alt={title} className="card-image" /> }

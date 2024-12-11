@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import ExperienceCard from "./ExperienceCard";
+import '../App.css';
 
-function Experience() {
+function Experience({ refProp }) {
   // Card Skeleton
   // image: "",
   // company: "",
@@ -34,7 +35,7 @@ function Experience() {
   ];
 
   return (
-    <div className="">
+    <section className="experience-section" ref={refProp} >
       <h1>Work Experience</h1>
       {cardData.map((card, index) => (
         <ExperienceCard
@@ -46,7 +47,7 @@ function Experience() {
           image={card.image}
         />
       ))}
-    </div>
+    </section>
   );
 }
 

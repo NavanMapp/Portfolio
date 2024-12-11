@@ -1,8 +1,8 @@
-function About() {
+function About({ refProp }) {
     return (
-        <div className="right-content">
-            <img src="" alt="About" className="aboutIcon" />
-            <p>
+        <section className="about-section" ref={refProp} >
+                  <h1>More Information</h1>
+            <p className="pTag" >
                 As Dynamic Full Stack Developer, I bring a wealth of experience 
                 in creating innovative, scalable web and mobile applications using 
                 a diverse range of technology. I am proficient in both front-end
@@ -20,7 +20,7 @@ function About() {
                 in collaborative environments where problem-solving, continuous learning,
                 and high-impact development are at the forefront.
             </p>
-        </div>
+        </section>
   );
 }
 

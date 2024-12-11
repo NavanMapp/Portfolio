@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import profile from "../Images/profilePic.jpg"
 
 function Bio() {
+
   return (
-    <div className="bio">
+    <section className="bio-section" >
       <div className="bioName">Navan Maphalala</div>
       <div className="bioTitle">IT Administrator & Software Developer</div>
       <header>
@@ -21,7 +22,7 @@ function Bio() {
         project deliveries. I have a keen eye for detail and strong willingness
         to learn new things.
       </p>
-    </div>
+    </section>
   );
 }
 

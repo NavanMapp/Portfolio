@@ -113,7 +113,24 @@
     flex-direction: column; /* Stack content vertically */
   }
   
-  .right-content section {
+  .right-content, p {
     margin-bottom: 40px; /* Space between sections */
   }
-  
+
+  .right-content {
+    display: flex;
+  }
+
+  .bio-section {
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  .project-section {
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  .experience-section {
+    flex-direction: column;
+  }
