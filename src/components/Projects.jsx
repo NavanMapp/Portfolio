@@ -2,7 +2,7 @@ import React from "react";
 
 function Projects({title, description, image, refProp }) {
     return (
-        <div className="" ref={refProp} >
+        <div className="" style={{ padding: "20px", height: "100vh"}} >
             <h1>Projects</h1>
             <section className="experienceCard">
                 { image && <img src={image} alt={title} className="card-image" /> }

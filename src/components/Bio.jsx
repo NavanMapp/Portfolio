@@ -4,7 +4,7 @@ import profile from "../Images/profilePic.jpg"
 function Bio() {
 
   return (
-    <section className="bio-section" >
+    <section className="bio-section" style={{ padding: "20px", height: "100vh" }}>
       <div className="bioName">Navan Maphalala</div>
       <div className="bioTitle">IT Administrator & Software Developer</div>
       <header>

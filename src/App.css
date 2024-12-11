@@ -2,7 +2,7 @@
 .App {
     display: flex;
     height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width */
+    /* width: 100%;  */
     overflow: hidden; /* Prevent horizontal overflow */
   }
   
@@ -27,18 +27,49 @@
   
   /**************************** Navigation ***********************/
   
-  .left-nav {
-    width: 20%; /* Fixed width for navigation */
-    background-color: #bfc1c7; /* Dark background */
-    color: white; /* Text color */
-    height: 100vh; /* Fill entire viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align links at the top */
-    padding: 20px; /* Add spacing inside */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 400px;
+    background-color: #bfc1c7;
+    color: white;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateX(-350px);
+    z-index: 1000;
   }
 
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar.closed {
+    transform: translateX(-350px);
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 800px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+
+  .sidebar ul li {
+    margin: 15px 0;
+    cursor: pointer;
+  }
   .contact {
     text-align: center;
     padding: 10px;
@@ -104,33 +135,31 @@
     transition: color 0.3s ease;
   }
   
-  /************* Right Content *************/
-  .right-content {
-    flex: 1; /* Fill remaining space */
-    padding: 20px; /* Spacing inside the content area */
-    overflow-y: auto; /* Enable vertical scrolling */
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
+  /************* Right/Main Content *************/
+  .main-content {
+    flex: 1;
+    overflow-y: auto;
+    transition: margin-left 0.3s ease;
+  }
+
+  .main-content.sidebar-open {
+    margin-left: 400px;
+  }
+
+  .main-content.sidebar-closed {
+    margin-left: 100px;
   }
   
-  .right-content, p {
-    margin-bottom: 40px; /* Space between sections */
-  }
-
-  .right-content {
-    display: flex;
-  }
-
   .bio-section {
     /* display: flex; */
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .project-section {
     /* display: flex; */
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .experience-section {
-    flex-direction: column;
+    /* flex-direction: column; */
   }

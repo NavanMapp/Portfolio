@@ -3,7 +3,7 @@ import Experience from "./Experience"
 import ExperienceCard from "./ExperienceCard"
 
 
-export default function Navigation() {
+export default function Navigation({isOpen, toggleSidebar }) {
 
     const scrollToSection = () => {
         // e.preventDefault()
@@ -22,9 +22,13 @@ export default function Navigation() {
             projectSection.scrollIntoView({ behavior: "smooth" })
         }
     }
+
     return (
-        <div className="left-nav">
+        <div className={`sidebar ${isOpen ? "open" : "closed"}`} >
             <nav>
+                <button className="toggle-button" onClick={toggleSidebar} >
+                    {isOpen ? "<<<" : ">>>" }
+                </button>
                 <ul className="contact-info">
                     <h1 className="contact">Contact</h1>
                     <li>
@@ -33,7 +37,7 @@ export default function Navigation() {
                     </li>
                     <li>
                         <img src="" alt="" className="icon location-icon" />
-                        <span>📍</span> Johannesburg, South Africa
+                        <span>📍</span> Gauteng, South Africa
                     </li>
                 </ul>
                 <div className="navigation-links">

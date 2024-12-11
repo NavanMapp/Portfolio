@@ -1,6 +1,6 @@
-function About({ refProp }) {
+function About() {
     return (
-        <section className="about-section" ref={refProp} >
+        <section className="about-section" style={{ padding: "20px", height: "30vh"}}>
                   <h1>More Information</h1>
             <p className="pTag" >
                 As Dynamic Full Stack Developer, I bring a wealth of experience 
