@@ -37,7 +37,7 @@
     color: white;
     overflow-y: auto;
     transition: transform 0.3s ease;
-    transform: translateX(-350px);
+    transform: translateX(-330px);
     z-index: 1000;
   }
 
@@ -48,7 +48,7 @@
   }
 
   .sidebar.closed {
-    transform: translateX(-350px);
+    transform: translateX(-330px);
   }
 
   .toggle-button {
@@ -57,11 +57,16 @@
     right: 10px;
     width: 35px;
     height: 35px;
-    background: #333;
     color: #fff;
     border: none;
     border-radius: 100%;
     cursor: pointer;
+  }
+
+  .toggle-button .icon {
+        width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }
 
   .sidebar ul {
@@ -73,10 +78,6 @@
     margin: 15px 0;
     cursor: pointer;
     list-style-type: none;
-  }
-  .contact {
-    text-align: center;
-    padding: 10px;
   }
   
   .sidebar a {
@@ -148,7 +149,7 @@
   }
 
   .main-content.sidebar-closed {
-    margin-left: 45px;
+    margin-left: 65px;
   }
   
   .bio-section {
@@ -158,6 +159,7 @@
 
   .project-info a  {
     display: grid;
+    /* display: flex; */
     z-index: auto;
     align-items: center;
     text-decoration: none;
@@ -185,4 +187,10 @@
     display: grid;
     flex-direction: column;
     z-index: auto;
+  }
+
+  .bio-section, .project-section, 
+  .experience-section, .education-section,
+  .about-section {
+    padding: 20px;
   }

@@ -10,7 +10,7 @@ import uiImg from "../Images/ui.png"
 
 function Projects({ title, description, image, refProp }) {
     return (
-        <div className="project-section" style={{ padding: "20px", height: "100vh" }} >
+        <div className="project-section" >
             <h1>Projects</h1>
             <div className="project-info">
                 <section className="experience-card">

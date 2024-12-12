@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section className="about-section" style={{ padding: "20px", height: "30vh"}}>
+        <section className="about-section" >
                   <h1>More Information</h1>
             <p className="pTag" >
                 As Dynamic Full Stack Developer, I bring a wealth of experience 

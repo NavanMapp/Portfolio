@@ -7,6 +7,8 @@ import experienceImg from "../Images/experience.png"
 import aboutImg from "../Images/about.png"
 import emailImg from "../Images/gmail.png"
 import locationImg from "../Images/location.png"
+import leftImg from "../Images/leftarrow.png"
+import rightImg from "../Images/rightarrow.png"
 
 
 export default function Navigation({isOpen, toggleSidebar }) {
@@ -32,9 +34,9 @@ export default function Navigation({isOpen, toggleSidebar }) {
     return (
         <div className={`sidebar ${isOpen ? "open" : "closed"}`} >
             <nav>
-                <button className="toggle-button" onClick={toggleSidebar} >
-                    {isOpen ? "<<<" : ">>>" }
-                </button>
+                <a className="toggle-button" onClick={toggleSidebar} >
+                    {isOpen ? <img src={leftImg} className="icon" /> : <img src={rightImg} className="icon" /> }
+                </a>
                 <ul className="contact-info">
                     <h1 className="contact">Contact</h1>
                     <li>

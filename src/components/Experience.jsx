@@ -35,7 +35,7 @@ function Experience() {
   ];
 
   return (
-    <section className="experience-section" style={{ padding: "20px", height: "100vh"}} >
+    <section className="experience-section" >
       <h1>Work Experience</h1>
       {cardData.map((card, index) => (
         <ExperienceCard
