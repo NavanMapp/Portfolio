@@ -41,16 +41,38 @@
     z-index: 1000;
   }
 
-  
-
   .sidebar.open {
     transform: translateX(0);
   }
 
   .sidebar.closed {
     transform: translateX(-330px);
+    /* width: 10px; */
   }
 
+  .sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+
+  .sidebar ul li {
+    margin: 15px 0;
+    display: flex;
+    cursor: pointer;
+    list-style-type: none;
+  }
+
+  .sidebar ul li .label {
+    margin-left: 10px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar.closed ul li .label {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
   .toggle-button {
     position: absolute;
     top: 400px;
@@ -64,20 +86,9 @@
   }
 
   .toggle-button .icon {
-        width: 30px;
+    width: 30px;
     height: 30px;
     margin-right: 10px;
-  }
-
-  .sidebar ul {
-    list-style-type: none;
-    padding: 20px;
-  }
-
-  .sidebar ul li {
-    margin: 15px 0;
-    cursor: pointer;
-    list-style-type: none;
   }
   
   .sidebar a {
@@ -114,9 +125,6 @@
   }
 
   .navigation-links {
-    justify-content: center;
-    /* justify-items: center; */
-    /* text-align: center; */
     display: flex;
     align-items: center;
     margin: auto;
@@ -125,7 +133,6 @@
   .navigation-links .icon {
     width: 40px;
     height: 40px;
-    /* margin-right: 0; */
     padding: 20px;
   }
 
@@ -136,7 +143,7 @@
     font-size: 25px;
     transition: color 0.3s ease;
   }
-  
+
   /************* Right/Main Content *************/
   .main-content {
     flex: 1;
@@ -154,12 +161,11 @@
   
   .bio-section {
     /* display: flex; */
-    /* flex-direction: column; */
+    flex-direction: column;
   }
 
   .project-info a  {
     display: grid;
-    /* display: flex; */
     z-index: auto;
     align-items: center;
     text-decoration: none;
@@ -168,7 +174,6 @@
   }
 
   .project-info ul {
-    display: flex;
     padding: 10px;
   }
 
@@ -183,7 +188,7 @@
     font-weight: bolder;
   }
 
-  .experience-card {
+  .project-section {
     display: grid;
     flex-direction: column;
     z-index: auto;
@@ -194,3 +199,46 @@
   .about-section {
     padding: 20px;
   }
+
+
+/****************** MOBILE ********************/
+@media (min-width: 320px) and (max-width: 424px) {
+  .sidebar {
+    transform: translateX(-330px);
+    width: auto;
+  }
+
+  .sidebar ul li .label {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .toggle-button {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .experience-card ul {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+
+  .bio-section {
+    display: grid;
+    overflow-y: auto;
+    z-index: auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .experience-card ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+  }
+}
+
+@media(min-width: 769px) {
+  .experience-card ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+}

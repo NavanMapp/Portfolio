@@ -41,11 +41,11 @@ export default function Navigation({isOpen, toggleSidebar }) {
                     <h1 className="contact">Contact</h1>
                     <li>
                         <img src={emailImg} alt="" className="icon email-icon" />
-                        <span></span> navanmapp@gmail.com
+                        <span className="label">navanmapp@gmail.com</span> 
                     </li>
                     <li>
                         <img src={locationImg} alt="" className="icon location-icon" />
-                        <span></span> Gauteng, South Africa
+                        <span className="label">Gauteng, South Africa</span> 
                     </li>
                 </ul>
                 <div className="navigation-links">
@@ -53,25 +53,25 @@ export default function Navigation({isOpen, toggleSidebar }) {
                         <li>
                             <a href="#projects" onClick={scrollToSection} >
                                 <img src={projectImg} alt="Projects Icon" className="icon projects-icon" />
-                                <span>Projects</span>
+                                <span className="label">Projects</span>
                             </a>
                         </li>
                         <li>
                             <a href="#experience" onClick={scrollToSection} >
                                 <img src={experienceImg} alt="Experience Icon" className="icon experience-icon" />
-                                <span>Work Experience</span>
+                                <span className="label">Work Experience</span>
                             </a>
                         </li>
                         <li>
                             <a href="#education" onClick={scrollToSection} >
                                 <img src={educationImg} alt="Education Icon" className="icon education-icon" />
-                                <span>Education</span>
+                                <span className="label">Education</span>
                             </a>
                         </li>
                         <li>
                             <a href="#about" onClick={scrollToSection} >
                                 <img src={aboutImg} alt="About Icon" className="icon about-icon" />
-                                <span>About</span>
+                                <span className="label">About</span>
                             </a>
                         </li>
                     </ul>
