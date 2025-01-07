@@ -119,8 +119,8 @@
   }
   
   .contact-info .icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
   }
 
@@ -204,8 +204,8 @@
 /****************** MOBILE ********************/
 @media (min-width: 320px) and (max-width: 424px) {
   .sidebar {
-    transform: translateX(-330px);
-    width: auto;
+    transform: none;
+    padding: 2px;
   }
 
   .sidebar ul li .label {
@@ -221,12 +221,42 @@
     grid-template-columns: 1fr 1fr;
     display: grid;
   }
+  .label {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+  }
 
   .bio-section {
     display: grid;
     overflow-y: auto;
     z-index: auto;
   }
+
+  .navigation-links a {
+    margin-left: 315px;
+  }
+
+  .contact-info a {
+    margin-left: 260px;
+    padding: 2px;
+  }
+
+  .contact-info {
+    background-color: #bfc1c7;
+  }
+  .contact-info .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .navigation-links .icon {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
@@ -234,6 +264,45 @@
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
   }
+  .sidebar {
+    transform: translateX(-330px);
+  }
+
+  .sidebar ul li .label {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .toggle-button {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .label {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .bio-section {
+    display: grid;
+    overflow-y: auto;
+    z-index: auto;
+  }
+
+  .navigation-links a {
+    margin-left: 300px;
+  }
+  
+  .contact-info {
+    background-color: #bfc1c7;
+  }
+  
+  .contact-info a {
+    margin-left: 260px;
+    padding: 2px;
+  }
+
 }
 
 @media(min-width: 769px) {
