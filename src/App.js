@@ -6,6 +6,7 @@ import Bio from './components/Bio'
 import Projects from './components/Projects'
 import { useRef, useState } from 'react'
 import About from './components/About'
+import Education from './components/Education'
 
 function App() {
 
@@ -18,9 +19,12 @@ function App() {
   const projectsRef = useRef(null)
   const experienceRef = useRef(null)
   const aboutRef = useRef(null)
+  const educationRef = useRef(null)
 
   const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" })
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" })
+    }
   }
 
   return (
@@ -32,7 +36,8 @@ function App() {
             Bio: bioRef,
             Projects: projectsRef,
             Experience: experienceRef,
-            About: aboutRef
+            About: aboutRef,
+            Education: educationRef
           }}
          />
         <div ref={bioRef}>
@@ -43,6 +48,9 @@ function App() {
         </div>
         <div ref={experienceRef}>
           <Experience />
+        </div>
+        <div ref={educationRef}>
+          <Education />
         </div>
         <div ref={aboutRef}>
           <About />
