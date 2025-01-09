@@ -19,67 +19,63 @@ function Projects({ title, description, image, refProp }) {
         <div className="project-section" >
             <h1>Projects</h1>
             <div className="project-info">
-                <div>
-                    <section className="experience-card">
-                        {image && <img src={image} alt={title} className="card-image" />}
-                        <h2 className="card-title" >
-                            {title}
-                            Mapp Supreme Website
-                        </h2>
-                        <h3>Ticket logging system for a local IT company.</h3>
-                        <a href="https://mappsupreme-50938.web.app/" className="App-link" target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Project Link
+                <section className="experience-card">
+                    {image && <img src={image} alt={title} className="card-image" />}
+                    <h2 className="card-title" >
+                        {title}
+                        Mapp Supreme Website
+                    </h2>
+                    <h3>Ticket logging system for a local IT company.</h3>
+                    <a href="https://mappsupreme-50938.web.app/" className="App-link" target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Project Link
+                    </a>
+                    <div className="stack">Stack</div>
+                    <ul className="" >
+                        <a href="https://www.javascript.com/">
+                            <img src={jsImg} alt="Javascript" className="icon" />Javascript
+                        </a>                        <a href="https://react.dev/">
+                            <img src={reactImg} alt="React" className="icon" />React
                         </a>
-                        <div className="stack">Stack</div>
-                        <ul className="" >
-                            <a href="https://www.javascript.com/">
-                                <img src={jsImg} alt="Javascript" className="icon" />Javascript
-                            </a>                        <a href="https://react.dev/">
-                                <img src={reactImg} alt="React" className="icon" />React
-                            </a>
 
-                            <a href="https://html.com" >
-                                <img src={htmlImg} alt="HTML" className="icon" />HTML
-                            </a>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" >
-                                <img src={cssImg} alt="CSS" className="icon" />CSS
-                            </a>
-                            <a href="https://firebase.google.com/" >
-                                <img src={firebaseImg} alt="Firebase" className="icon" />Firebase
-                            </a>
-                        </ul>
-                    </section>
-                    <section className="experience-card">
-                        <h2>
-                            <img className="" />
-                            Price Compare API
-                        </h2>
-                        <h3>Application that compares store products to others.</h3>
-                        <a href="" className="App-link" target="_blank" rel="noopener noreferrer">
-                            Project Link
+                        <a href="https://html.com" >
+                            <img src={htmlImg} alt="HTML" className="icon" />HTML
                         </a>
-                        <div className="stack">Stack</div>
-                        <ul>
-                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                                <img src={csharpImg} alt="C#, ASP.Net Core Web API" className="icon" />ASP.Net
-                            </a>
-                            <a href="https://react.dev/">
-                                <img src={reactImg} alt="React" className="icon" />React
-                            </a>
-                            <a href="https://mui.com" >
-                                <img src={uiImg} alt="Material UI" className="icon" />Material UI
-                            </a>
-                            <a href="https://mysql.com" >
-                                <img src={mysqlImg} alt="MySQL" className="icon" />MySQL
-                            </a>
-                        </ul>
-                    </section>
-                </div>
-
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" >
+                            <img src={cssImg} alt="CSS" className="icon" />CSS
+                        </a>
+                        <a href="https://firebase.google.com/" >
+                            <img src={firebaseImg} alt="Firebase" className="icon" />Firebase
+                        </a>
+                    </ul>
+                </section>
+                <section className="experience-card">
+                    <h2>
+                        <img className="" />
+                        Price Compare API
+                    </h2>
+                    <h3>Application that compares store products to others.</h3>
+                    <a href="" className="App-link" target="_blank" rel="noopener noreferrer">
+                        Project Link
+                    </a>
+                    <div className="stack">Stack</div>
+                    <ul>
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                            <img src={csharpImg} alt="C#, ASP.Net Core Web API" className="icon" />ASP.Net
+                        </a>
+                        <a href="https://react.dev/">
+                            <img src={reactImg} alt="React" className="icon" />React
+                        </a>
+                        <a href="https://mui.com" >
+                            <img src={uiImg} alt="Material UI" className="icon" />Material UI
+                        </a>
+                        <a href="https://mysql.com" >
+                            <img src={mysqlImg} alt="MySQL" className="icon" />MySQL
+                        </a>
+                    </ul>
+                </section>
             </div>
-
         </div>
     )
 }
